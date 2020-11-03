@@ -22,11 +22,11 @@ body{
   display: flex;
   justify-content: center;
   background: repeating-linear-gradient(
-    -45deg,
-    #c77400,
-    #c77400 10px,
-    #ccc 10px,
-    #ccc 20px
+    45deg,
+    #e67e22,
+    #e67e22 10px,
+    #d7dbdd 10px,
+    #d7dbdd 20px
 );
 }
 
@@ -42,8 +42,8 @@ body{
 }
 
 #hero-image img{
-  width: 450px;
-  height: 500px;
+  width: 500px;
+  height: 650px;
 }
 
 #content-box{
@@ -76,4 +76,43 @@ a{
 a:hover{
   background: grey;
   color: white;
+}
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure{
+  position: relative;
+  width: 600%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img{
+  width 33%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -110%;
+  }
+  45% {
+    left: -110%;
+  }
+  50% {
+    left: -240%;
+  }
+  70% {
+    left: -240%;
+  }
+
 }
