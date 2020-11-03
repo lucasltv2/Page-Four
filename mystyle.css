@@ -1,7 +1,33 @@
+@font-face {
+  font-family: Trispaceh1;
+  src: url(Fonts/Trispace/static/Trispace-Bold.ttf);
+}
+
+@font-face {
+  font-family: Trispacebody;
+  src: url(Fonts/Trispace/static/Trispace-Light.ttf);
+}
+
+@font-face {
+  font-family: Trispacea;
+  src: url(Fonts/Trispace/static/Trispace-SemiBold.ttf);
+}
+
+h1{
+  font-family: Trispaceh1;
+}
+
 body{
+  font-family: Trispacebody;
   display: flex;
   justify-content: center;
-  background: #c77400;
+  background: repeating-linear-gradient(
+    -45deg,
+    #c77400,
+    #c77400 10px,
+    #ccc 10px,
+    #ccc 20px
+);
 }
 
 #container{
@@ -10,10 +36,21 @@ body{
   width: 500px;
 }
 
+#hero-image{
+  display: flex;
+  justify-content: center;
+}
+
+#hero-image img{
+  width: 450px;
+  height: 500px;
+}
+
 #content-box{
   background: #FFF;
   padding: 15px;
   margin-bottom: 15px;
+  box-shadow: 6px 6px 6px 3px rgba(0, 0, 0, .05);
 }
 
 ul{
@@ -21,16 +58,22 @@ ul{
   list-style-type: none;
   padding: 0px;
   display: flex;
-  justify-content: left;
-  margin-bottom: 13px;
+  justify-content: center;
+  margin: 40px;
+}
+
+li{
+  margin: 10px;
 }
 
 a{
+  font-family: Trispacea;
   text-decoration: none;
-  background: white;
-  padding: 15px;
+  padding: 5px;
+  color: black;
 }
 
 a:hover{
   background: grey;
+  color: white;
 }
